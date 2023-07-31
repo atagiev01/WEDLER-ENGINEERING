@@ -1,0 +1,49 @@
+#end{
+    .green{
+        @include Text($t_align:center,$ground:$dark_green_color);
+        padding: 50px 0px;
+        h2{ @include Text($colrs:$white_color,$f_size:30px,$f_weight:$weight_700,$l_heit:42px); }
+        div{
+            margin-top: 24px;
+            margin-bottom: 36px;
+            border-bottom: 3px solid $white_color;
+            width: 10%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        i{ @include Text($colrs:$white_color,$f_size:30px); }
+    }
+    .one{
+        background-color: $dark_gray_color;
+        padding: 50px 0px;
+        .container{
+            max-width: $max_wid;
+            .contact{
+                text-align: center;
+                h6{ @include Text($colrs:$white_color,$f_size:15px); }
+                div{
+                    margin-top: 18px;
+                    margin-bottom: 20px;
+                    border-bottom: 8px solid $dark_color;
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                a{ @include Text($t_decoration:none,$colrs:$white_color,$f_size:15px); }
+            }
+        }
+    }
+    .two{
+        background-color: $black_color;
+        padding: 50px 0px;
+        text-align: center;
+        img{ @include Img($wid:80px,$heit:46px,$o_fit:cover,$o_pos:center); }
+        p{
+            @include Text($colrs:$white_color,$f_size:14px);
+            padding: 20px 0px;
+        }
+        a{
+            @include Text($t_decoration:none,$f_size:9px,$colrs:#999);
+        }
+    }
+}
